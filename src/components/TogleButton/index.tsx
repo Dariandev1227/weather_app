@@ -14,8 +14,9 @@ interface Props {
 
 export const ButtonGroup: React.FC<Props> = ({ options, value, setValue }) => {
   const handleChange = (_: React.MouseEvent<HTMLElement>, selected: string) => {
-    console.log("aaaaaaa", selected);
-    setValue(selected);
+    if (selected) {
+      setValue(selected);
+    }
   };
 
   return (

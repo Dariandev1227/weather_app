@@ -47,3 +47,8 @@ export type WeatherData = {
   };
   properties: Property;
 };
+
+export type Option = {
+  label: string;
+  value: string;
+};
